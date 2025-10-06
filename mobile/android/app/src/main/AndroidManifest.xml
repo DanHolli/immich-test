@@ -143,6 +143,13 @@
       android:name="androidx.startup.InitializationProvider"
       android:authorities="${applicationId}.androidx-startup"
       tools:node="remove" />
+    <!-- Media provider -->
+    <provider
+        android:name=".MediaContentProvider"
+        android:authorities="${applicationId}.provider"
+        android:exported="true"
+        android:grantUriPermissions="true"
+        android:readPermission="android.permission.READ_EXTERNAL_STORAGE" />
 
 
     <!-- Widgets -->
