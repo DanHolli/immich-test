@@ -1,4 +1,4 @@
-package ${applicationId}
+package app.alextran.immich
 
 import android.content.ContentProvider
 import android.content.ContentUris
@@ -12,7 +12,7 @@ import java.io.File
 class MediaContentProvider : ContentProvider() {
 
     companion object {
-        const val AUTHORITY = ${applicationId}
+        const val AUTHORITY = "app.alextran.immich"
         const val MEDIA_TABLE = "media"
 
         val CONTENT_URI: Uri = Uri.parse("content://$AUTHORITY/$MEDIA_TABLE")
