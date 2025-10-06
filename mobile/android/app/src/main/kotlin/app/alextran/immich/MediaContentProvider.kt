@@ -12,7 +12,7 @@ import java.io.File
 class MediaContentProvider : ContentProvider() {
 
     companion object {
-        const val AUTHORITY = "com.yourdomain.immich.provider"
+        const val AUTHORITY = ${applicationId}
         const val MEDIA_TABLE = "media"
 
         val CONTENT_URI: Uri = Uri.parse("content://$AUTHORITY/$MEDIA_TABLE")
